@@ -21,8 +21,8 @@ public class Test {
         System.out.println("Set chiavi presenti nel Map: ");
         System.out.println(keys);
 
-        Collection<Integer> cardinalMonth = months.values();
-        System.out.println("Numeri cardinali presenti nel map");
+        List<Integer> cardinalMonth = new ArrayList<>(months.values());
+        System.out.println("\nValori del Map convertiti in List di interi:");
         System.out.println(cardinalMonth);
 
         Integer[] cardinalMonthArray = cardinalMonth.toArray(new Integer[0]);
